@@ -33,30 +33,30 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q         &kp W      &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y      &kp LEFT_COMMAND
-&ht A LSHIFT  &kp R      &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I      &ht O RSHIFT
-&kp X         &kp C      &kp D  &kp V  &kp Z    &kp K  &kp H  &kp COMMA  &kp DOT    &kp BACKSPACE
-&mo 2         &kp LCTRL                                                  &kp SPACE  &mo 1
+&kp Q         &kp W  &kp F  &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp ESC
+&ht LSHIFT A  &kp R  &kp S  &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &ht RSHIFT O
+&kp X         &kp C  &kp D  &kp V  &kp Z        &kp K      &kp H  &kp COMMA  &kp DOT  &kp LEFT_GUI
+                            &mo 2  &kp LCTRL    &kp SPACE  &mo 1
             >;
         };
 
         right_layer {
             display-name = "Right Layer";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5              &kp NUMBER_6      &kp N7             &kp N8         &kp N9           &kp N0
-&kp LCTRL     &kp LEFT_SHIFT  &kp LEFT_ALT  &kp ENTER     &kp LEFT_COMMAND    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH      &kp RIGHT_SHIFT  &kp SEMI
-&kp GRAVE     &kp GRAVE       &kp MINUS     &kp PLUS      &kp EQUAL           &trans            &trans             &kp BACKSLASH  &trans           &kp BACKSPACE
-&trans        &kp LCTRL                                                                                                           &kp SPACE        &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &trans     &trans    &kp PAGE_DOWN  &kp PAGE_UP  &kp TAB
+&kp GRAVE     &kp MINUS     &kp EQUAL     &kp ENTER     &kp LEFT_ALT    &kp LEFT   &kp DOWN  &kp UP_ARROW   &kp RIGHT    &kp RSHFT
+&trans        &trans        &trans        &trans        &trans          &trans     &trans    &trans         &trans       &kp BACKSPACE
+                                          &trans        &kp LCTRL       &kp SPACE  &trans
             >;
         };
 
         left_layer {
             display-name = "Left Layer";
             bindings = <
-&trans  &kp PAGE_DOWN  &kp PAGE_UP  &kp ESC  &trans    &trans             &kp LEFT   &kp DOWN      &kp UP_ARROW  &kp RIGHT
-&trans  &trans         &trans       &trans   &trans    &kp RIGHT_COMMAND  &kp ENTER  &kp LEFT_ALT  &kp RSHFT     &kp RCTRL
-&trans  &trans         &trans       &trans   &trans    &trans             &kp TAB    &trans        &trans        &kp BACKSPACE
-&trans  &kp LCTRL                                                                                  &kp SPACE     &trans
+&trans          &trans   &trans  &kp ESC    &kp DEL         &kp NUMBER_6  &kp N7         &kp N8                &kp N9             &kp N0
+&kp LEFT_SHIFT  &kp TAB  &trans  &kp ENTER  &kp LEFT_ALT    &kp SQT       &kp BACKSPACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp SEMICOLON
+&trans          &trans   &trans  &trans     &trans          &trans        &trans         &kp NON_US_BACKSLASH  &kp SLASH          &trans
+                                 &trans     &kp LCTRL       &kp SPACE     &trans
             >;
         };
 
@@ -66,7 +66,7 @@
 &sys_reset   &trans  &trans  &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &sys_reset
 &bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
-&trans       &trans                                                              &trans  &trans
+                             &trans      &trans          &trans  &trans
             >;
         };
     };
